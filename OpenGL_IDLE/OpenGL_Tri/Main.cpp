@@ -24,7 +24,7 @@ void MyIdle()
 {
     xDir = -X + Radius < cordX && cordX < X - Radius ? xDir : -xDir;
     cordX = cordX + 2 * Speed * xDir;
-    yDir = -Y + Radius < cordY&& cordY < Y - Radius ? yDir : -yDir;
+    yDir = -Y + Radius < cordY && cordY < Y - Radius ? yDir : -yDir;
     cordY = cordY + Speed * yDir;
     glTranslatef(2 * Speed * xDir, Speed * yDir, 0.0); // Sphere ÀÌµ¿
     glutPostRedisplay();
