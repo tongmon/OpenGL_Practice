@@ -74,7 +74,8 @@ void MyMouseClick(GLint Button, GLint State, GLint X, GLint Y) // 마우스는 윈도�
     Left[0] = BlackX - 16; Left[1] = BlackY;
     Right[0] = BlackX + 16; Right[1] = BlackY;
     m_X = X * (100.0 / WINDOW_WIDTH); m_Y = (WINDOW_HEIGHT - Y) * (100.0 / WINDOW_HEIGHT);
-    if (Button == GLUT_LEFT_BUTTON && State == GLUT_DOWN) 
+    if (Button == GLUT_LEFT_BUTTON && State == GLUT_DOWN 
+        && 12 < m_X && m_X < 92 && 36 < m_Y && m_Y < 76)
     {
         if (is_Collison(m_X, m_Y, Up))
         {
